@@ -5,11 +5,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<title> - Главная</title>
+	<title> - ДОбро пожаловать!</title>
 	<link rel="stylesheet" type="text/css" href="css/app.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
 </head>
-<body class="loaded home-page">
+<body class="loaded profile-page">
 
 
 <!-- BEGIN BODY -->
@@ -20,18 +20,15 @@
 		<div class="wrapper ">
 			<div class="header__top">
 				<div class="header__left">
-					
+					<a href="#" class="btn"><span class="btn-mask">Nickname</span></a>
 				</div>
 				<div class="header__middle">
 					<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
 				</div>
 				<div class="header__right">
-					<a href="#" class="btn"><span class="btn-mask">Войти</span></a>
+					<a href="#" class="btn btn--danger logout"><span class="btn-mask">Выйти</span></a>
 				</div>
 			</div>
-			
-			<div class="slogan">зарабатывай деньги, играя в игру</div>
-			
 			<nav class="navbar">
 				<ul class="navbar-menu">
 					<li class="navbar-menu__item">
@@ -52,24 +49,7 @@
 				</ul>
 			</nav>
 	
-			<div class="house-wrap">
-				<div class="house-wrap__header">
-					<div class="house-wrap__text">
-						<span>1000 золота</span> за регистрацию
-					</div>
-					<a href="#" class="btn"><span class="btn-mask">Регистрация</span></a>
-				</div>
-				<div class="house">
-					
-				</div>
-				<div class="money-1"></div>
-				<div class="money-2"></div>
-				<div class="bird-green"></div>
-				<div class="bird-warning"></div>
-				<div class="bird-yellow"></div>
-				<div class="bird-red"></div>
-				<div class="scroll"></div>
-			</div>
+			
 		</div>
 	</header>
 	<!-- HEADER EOF   -->
@@ -77,43 +57,116 @@
 	<!-- BEGIN MAIN -->
 	<main class="main">
 		<div class="wrapper">
-			<div class="h-top">
-				<div class="h-top__left">
-					<div class="rules">
-						<div class="rules__title">Как играть</div>
-						<div class="rules__text">
-							<p>1. Купите птиц, они будут
-							нести вам яйца.</p>
+			<div class="main-wrap">
+				<div class="sidebar">
+					<div class="bonus">
+						<div class="bonus-money-1"></div>
+						<div class="bonus-money-2"></div>
+						<div class="bonus-money-3"></div>
+						<div class="bonus-ls-1"></div>
+						<div class="bonus-ls-2"></div>
+						<div class="b-title">При пополнении счета</div>
 
-							<p>2. Яйца будут накапливаться
-							на складе, собирайте их.</p>
+						<ul class="bonus-list">
+							<li>от 1000 рублей <span>+25</span> в подарок!</li>
+							<li>от 1000 рублей <span>+50</span> в подарок!</li>
+							<li>от 1000 рублей <span>+100</span> в подарок!</li>
+							<li>от 1000 рублей <span>+200</span> в подарок!</li>
+						</ul>
 
-							<p>3. Продавайте яйца и
-							получайте за них Золото.</p>
-
-							<p>4. Обменивайте серебро на
-							реальные деньги, либо
-							покупайте больше птиц,
-							чтобы они приносили вам
-							еще больше прибыли!</p>
-							
-
+						<div class="bonus-action">
+							<div class="bonus-action__title">До конца акции:</div>
+							<div id="countdown-3"></div>
 						</div>
 					</div>
-				</div>
-				<div class="h-top__right">
-					<div class="video-block">
-						<div class="b-title">Посмотри видео</div>
-						<div class="video">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/4So0hpZEkWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					<div class="balance">
+						<div class="participants-list">
+							<div class="participants-list__item">
+								<div class="b-title">Для покупок</div>
+								<div class="participants-list__value">
+									<div class="participants-list__input">
+										1245262
+										<a href="#" class="participants-list__link">Пополнить</a>
+									</div>
+								</div>
+							</div>
+							<div class="participants-list__item">
+								<div class="b-title">На вывод</div>
+								<div class="participants-list__value">
+									<div class="participants-list__input">
+										1542246
+										<a href="#" class="participants-list__link">Вывести</a>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+
+					<ul class="sidebar-menu">
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Купить птиц</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Склад яиц</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Бесплатные птицы</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Бонус</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Игровая зона</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Недельная лотерея</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Акция от PF</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Мои рефералы</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Обменник</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Биржа серебра</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Накопительный банк</span></a></li>
+						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Служба поддержки</span></a></li>
+					</ul>
+					
+				</div>
+				<div class="content">
+					<div class="mm mm-p">
+						<div class="mm__title">Настройка профиля</div>
+						
+						<div class="set-block set-block-grid">
+							<a href="#" class="btn btn--info "><span class="btn-mask">Смена пароля <i class="ic ic-key"></i></span></a>
+							<a href="#" class="btn btn--default "><span class="btn-mask">Кошельки <i class="ic ic-wallet"></i></span></a>
+						</div>
+
+						<div class="info-block">
+							Поле Пароль должно иметь от 6 до 20 символов (Разрешены: только англ. символы, цифры, символы " - _ . ")
+						</div>
+						
+						<form action="#" class="set-form">
+							<div class="h3">Введите старый пароль</div>
+							<div class="form-field">
+								<div class="form-box">
+									<input type="password" class="form-input fi-center">
+								</div>
+							</div>
+							<div class="h3">Введите Новый пароль</div>
+							<div class="form-field">
+								<div class="form-box">
+									<input type="password" class="form-input fi-center">
+								</div>
+							</div>
+							<div class="h3">Повторите Новый пароль</div>
+							<div class="form-field">
+								<div class="form-box">
+									<input type="password" class="form-input fi-center">
+								</div>
+							</div>
+							<div class="form-button">
+								<button type="submit" class="btn btn-form"><span class="btn-mask">Применить</span></button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 
-			<div class="h-bottom">
-				<div class="h-bottom__left">
-					
+			
+			<div class="statistic-project">
+				<h3>Статистика проекта</h3>
+				<div class="statistic-project-box">
+					<div class="static-project-1"></div>
+					<div class="static-project-2"></div>
+					<div class="static-project-3"></div>
+					<div class="static-project-4"></div>
 					<div class="participants-list">
 						<div class="participants-list__item">
 							<div class="b-title">ВСего участников</div>
@@ -147,44 +200,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="h-bottom__right">
-					<div class="grid-icons">
-						<div class="grid-icons__item">
-							<div class="grid-icons__img"><img src="img/money.svg" alt="" width="50" height="69"></div>
-							<div class="grid-icons__title">Резервный фонд</div>
-						</div>
-						<div class="grid-icons__item">
-							<div class="grid-icons__img"><img src="img/cup.svg" alt="" width="60" height="60"></div>
-							<div class="grid-icons__title">Окупаемость</div>
-						</div>
-						<div class="grid-icons__item">
-							<div class="grid-icons__img"><img src="img/crown.svg" alt="" width="81" height="45"></div>
-							<div class="grid-icons__title">Выгодные условия</div>
-						</div>
-						<div class="grid-icons__item">
-							<div class="grid-icons__img"><img src="img/hourglass.svg" alt="" width="41" height="60"></div>
-							<div class="grid-icons__title">Стабильность</div>
-						</div>
-						<div class="grid-icons__item">
-							<div class="grid-icons__img"><img src="img/lightning.svg" alt="" width="57" height="66"></div>
-							<div class="grid-icons__title">Круглосуточная тех. поддержка</div>
-						</div>
-					</div>
-
-					<div class="reg-block text-center">
-						<a href="#" class="btn"><span class="btn-mask">Регистрация</span></a>
-						<div class="b-title b-title--yellow">1000 золота в подарок</div>
-					</div>
-				</div>
 			</div>
+		
+
 		</div>
-		
-		
 	</main>
 	<!-- MAIN EOF   -->
 		
 	<!-- BEGIN FOOTER -->
 	<footer class="footer">
+		
 		<div class="footer-wrapper">
 			<div class="wrapper">
 				<div class="footer-block-nav">
@@ -241,6 +266,7 @@
 	</div> -->
 
 </div>
+
 <!-- BODY EOF   -->
 <div class="icon-load">
 	<div class="ball a"></div>
@@ -248,6 +274,17 @@
 	<div class="ball c"></div>
 </div>
 <script src="js/all.js"></script>
-
+<script>
+	
+	$('#countdown').timeTo({
+        time: '23:59:54',
+        displayDays: 2,
+        theme: "black",
+        displayCaptions: true,
+        fontSize: 48,
+        captionSize: 14,
+        lang: 'es'
+    });
+</script>
 </body>
 </html>
