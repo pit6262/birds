@@ -58,6 +58,7 @@
 	<main class="main">
 		<div class="wrapper">
 			<div class="main-wrap">
+				<!-- BEGIN SIDEBAR -->
 				<div class="sidebar">
 					<div class="bonus">
 						<div class="bonus-money-1"></div>
@@ -66,14 +67,14 @@
 						<div class="bonus-ls-1"></div>
 						<div class="bonus-ls-2"></div>
 						<div class="b-title">При пополнении счета</div>
-
+				
 						<ul class="bonus-list">
 							<li>от 1000 рублей <span>+25</span> в подарок!</li>
 							<li>от 1000 рублей <span>+50</span> в подарок!</li>
 							<li>от 1000 рублей <span>+100</span> в подарок!</li>
 							<li>от 1000 рублей <span>+200</span> в подарок!</li>
 						</ul>
-
+				
 						<div class="bonus-action">
 							<div class="bonus-action__title">До конца акции:</div>
 							<div id="countdown-3"></div>
@@ -102,7 +103,7 @@
 							</div>
 						</div>
 					</div>
-
+				
 					<ul class="sidebar-menu">
 						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Купить птиц</span></a></li>
 						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Склад яиц</span></a></li>
@@ -117,8 +118,9 @@
 						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Накопительный банк</span></a></li>
 						<li><a href="#" class="btn btn--block btn--default"><span class="btn-mask">Служба поддержки</span></a></li>
 					</ul>
-					
 				</div>
+				<!-- SIDEBAR EOF   -->
+
 				<div class="content">
 					<div class="mm mm-2">
 						<div class="mm__title">Вывод средств</div>
@@ -175,9 +177,9 @@
 				</div>
 			</div>
 
-			
+			<!-- BEGIN STATISTIC -->
 			<div class="statistic-project">
-				<h3>Статистика проекта</h3>
+				<h3 class="title">Статистика проекта</h3>
 				<div class="statistic-project-box">
 					<div class="static-project-1"></div>
 					<div class="static-project-2"></div>
@@ -185,31 +187,31 @@
 					<div class="static-project-4"></div>
 					<div class="participants-list">
 						<div class="participants-list__item">
-							<div class="b-title">ВСего участников</div>
+							<div class="h4 text-center">ВСего участников</div>
 							<div class="participants-list__value">
 								<div class="participants-list__input">1111111</div>
 							</div>
 						</div>
 						<div class="participants-list__item">
-							<div class="b-title">Новых за 24 часа</div>
+							<div class="h4 text-center">Новых за 24 часа</div>
 							<div class="participants-list__value">
 								<div class="participants-list__input">1111111</div>
 							</div>
 						</div>
 						<div class="participants-list__item">
-							<div class="b-title">Сейчас на сайте</div>
+							<div class="h4 text-center">Сейчас на сайте</div>
 							<div class="participants-list__value">
 								<div class="participants-list__input">1111111</div>
 							</div>
 						</div>
 						<div class="participants-list__item">
-							<div class="b-title">Выплачено всего</div>
+							<div class="h4 text-center">Выплачено всего</div>
 							<div class="participants-list__value">
 								<div class="participants-list__input">1111111</div>
 							</div>
 						</div>
 						<div class="participants-list__item">
-							<div class="b-title">Резерв проекта</div>
+							<div class="h4 text-center">Резерв проекта</div>
 							<div class="participants-list__value">
 								<div class="participants-list__input">1111111</div>
 							</div>
@@ -217,6 +219,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- STATISTIC EOF   -->
 		
 
 		</div>
@@ -249,38 +252,6 @@
 	</footer>
 	<!-- FOOTER EOF   -->
 
-	<!-- <a href="#popup-callback" class="open-popup-link">Заказать консультацию</a>
-	
-	<div id="popup-callback" class="popup mfp-hide">
-		
-		<h2 class="popup__title ">Оставьте заявку!</h2>
-		<h5>Заполните форму ниже или позвоните нам по номеру <a href="tel:+73532947711" class="text-default">+7 (3532) 94-77-11</a></h5>
-	
-		<form action="#" class="question-form">
-			
-			<div class="form-field">
-				<input type="text" class="form-input form-input--default " placeholder="* Ваше имя">
-			</div>
-		
-			<div class="form-field">
-				<input type="tel" class="form-input form-input--default  tel" placeholder="* Ваш телефон">
-			</div>
-		
-			<div class="form-field">
-				<textarea class="form-input form-input--default " placeholder="* Ваш комментарий"></textarea>
-			</div>
-			<div class="form-field">
-				<input type="submit" class="btn btn--danger" value="Отправить">
-			</div>
-				
-			<p><strong>мы свяжемся с Вами в течение 15 минут!</strong></p>
-		</form>
-	</div>
-	
-	<div id="popup-thanks" class="popup mfp-hide">
-		<h2 class="popup__title ">Заявка успешно отправлена!</h2>
-	</div> -->
-
 </div>
 
 <!-- BODY EOF   -->
@@ -290,17 +261,6 @@
 	<div class="ball c"></div>
 </div>
 <script src="js/all.js"></script>
-<script>
-	
-	$('#countdown').timeTo({
-        time: '23:59:54',
-        displayDays: 2,
-        theme: "black",
-        displayCaptions: true,
-        fontSize: 48,
-        captionSize: 14,
-        lang: 'es'
-    });
-</script>
+
 </body>
 </html>
