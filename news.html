@@ -13,7 +13,7 @@
 
 
 <!-- BEGIN BODY -->
-<div class="main-wrapper">
+<div class="main-wrapper" id="top">
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
@@ -145,13 +145,20 @@
 				</div>
 
 				<div class="pagination-wrapper">
-					<ul class="pagination">
+					<a href="#" class="btn btn--danger prev-arrow visible-sm"><span class="btn-mask">назад</span></a>
+					
+					<ul class="pagination hidden-sm">
 						<li><a href="#" class="is-active">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
 						<li><span>...</span></li>
 						<li><a href="#">22</a></li>
 					</ul>
+					<ul class="pagination visible-sm">
+						<li><a href="#" class="is-active">1</a></li>
+						
+					</ul>
+					<a href="#" class="btn btn--info next-arrow visible-sm"><span class="btn-mask">Далее</span></a>
 				</div>
 			</div>
 		</div>
@@ -178,8 +185,14 @@
 				<div class="footer-block-btn">
 					<a href="#" class="btn"><span class="btn-mask">Войти</span></a>
 				</div>
+	
+				<div class="up-wrapper">
+					<a href="#top" class="up anchor">&nbsp;</a>
+				</div>
 			</div>
 		</div>
+	
+	
 	</footer>
 	<!-- FOOTER EOF   -->
 
