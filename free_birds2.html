@@ -17,7 +17,9 @@
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
+	
 		<div class="wrapper ">
+	
 			<div class="header__top">
 				<div class="header__left">
 					<a href="#" class="btn"><span class="btn-mask">Nickname</span></a>
@@ -49,7 +51,14 @@
 				</ul>
 			</nav>
 	
-			
+			<div class="header__mobile">
+				<button class="toggle-menu"></button>
+	
+				<div class="header__buttons">
+					<a href="#" class="btn"><span class="btn-mask">Nickname</span></a>
+					<a href="#" class="btn btn--danger logout"><span class="btn-mask">Выйти</span></a>
+				</div>
+			</div>
 		</div>
 	</header>
 	<!-- HEADER EOF   -->
@@ -126,21 +135,29 @@
 						<div class="h3 text-center">Выполняйте задания и получайте за это вознаграждение в виде птиц, серебра и CP.</div>
 						
 						<div class="games">
-							<div class="games-inner games-inner--sm">
+							
+							<div class="games-inner">
 								<div class="games-inner__img">
 									<img src="img/lottoha.png" alt="">
 								</div>
 								<div class="games-inner__content">
 									<div class="games-inner__left">
 										<p>Зарегистрироваться на сайте и сделать две ставки на бонусные деньги.</p>
-										<div class="games-inner__info">
+										<div class="games-inner__info  hidden-lg">
 											<span class="games-inner__info-title">Награда:</span>
 											<div class="games-inner__info-details">
-												
-												<span><i class="ic ic-birds"></i> х1</span>
 												<span><i class="ic ic-money"></i> 1000</span>
+												<span><i class="ic ic-birds"></i> х1</span>
 											</div>
 										</div>
+									</div>
+									
+								</div>
+								<div class="games-inner__info  visible-lg">
+									<span class="games-inner__info-title">Награда:</span>
+									<div class="games-inner__info-details">
+										<span><i class="ic ic-money"></i> 1000</span>
+										<span><i class="ic ic-birds"></i> х1</span>
 									</div>
 								</div>
 							</div>
