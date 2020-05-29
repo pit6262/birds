@@ -13,7 +13,7 @@
 
 
 <!-- BEGIN BODY -->
-<div class="main-wrapper">
+<div class="main-wrapper" id="top">
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
@@ -50,8 +50,9 @@
 					</li>
 				</ul>
 			</nav>
-	
-			<div class="header__mobile">
+		</div>
+		<div class="header__mobile">
+			<div class="wrapper">
 				<button class="toggle-menu"></button>
 	
 				<div class="header__buttons">
@@ -60,6 +61,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="header__logo visible-md">
+			<a href="#" class="logo"><img src="img/logo-mobile.png" alt=""></a>
+		</div>
+		<div class="slogan visible-md">зарабатывай деньги, играя в игру</div>
+	
 	</header>
 	<!-- HEADER EOF   -->
 
@@ -138,7 +144,7 @@
 							<a href="#" class="btn btn--default "><span class="btn-mask">Кошельки <i class="ic ic-wallet"></i></span></a>
 						</div>
 
-						<div class="wallet-table">
+						<div class="wallet-table hidden-sm">
 							<div class="wallet-table__header">
 								<div class="wallet-table__th wt-1">Платежная система</div>
 								<div class="wallet-table__th wt-2">Номер кошелька</div>
@@ -161,6 +167,48 @@
 								<div class="wallet-table__td wt-2">89311442422524</div>
 								<div class="wallet-table__td wt-3">21.01.19</div>
 								<div class="wallet-table__button"><a href="#" class="btn btn--danger"><span class="btn-mask">Удалить</span></a></div>
+							</div>
+						</div>
+
+						<div class="wallet-list visible-sm">
+							<div class="wallet-list__header">
+								<div class="wallet-list__th">Кошелек №1</div>
+							</div>
+							<div class="wallet-list__body">
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Платежная система</div>
+									<div class="wallet-list__labeled">Qiwi кошелек</div>
+								</div>
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Номер</div>
+									<div class="wallet-list__labeled">89311442422524</div>
+								</div>
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Дата добавления</div>
+									<div class="wallet-list__labeled">21.01.19</div>
+								</div>
+								<div class="wallet-list__button"><a href="#" class="btn btn--danger"><span class="btn-mask">Удалить</span></a></div>
+							</div>
+						</div>
+
+						<div class="wallet-list visible-sm">
+							<div class="wallet-list__header">
+								<div class="wallet-list__th">Кошелек №2</div>
+							</div>
+							<div class="wallet-list__body">
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Платежная система</div>
+									<div class="wallet-list__labeled">Qiwi кошелек</div>
+								</div>
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Номер</div>
+									<div class="wallet-list__labeled">89311442422524</div>
+								</div>
+								<div class="wallet-list__item">
+									<div class="wallet-list__label">Дата добавления</div>
+									<div class="wallet-list__labeled">21.01.19</div>
+								</div>
+								<div class="wallet-list__button"><a href="#" class="btn btn--danger"><span class="btn-mask">Удалить</span></a></div>
 							</div>
 						</div>
 
@@ -229,13 +277,26 @@
 						<li><a href="#">О проекте</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
+					
+				</div>
+				<div class="footer-block-nav-btn visible-sm">
+					<ul class="footer-nav-btn">
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Главная</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Новости</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Правила</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">О проекте</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Контакты</span></a></li>
+					</ul>
 				</div>
 				<div class="footer-block-logo">
 					<a href="#" class="footer-logo"><img src="img/footer-logo.png" alt=""></a>
 					<div class="policy"><a href="#" >Пользовательское соглашение</a></div>
 				</div>
-				<div class="footer-block-btn">
+				<div class="footer-block-btn hidden-sm">
 					<a href="#" class="btn"><span class="btn-mask">Войти</span></a>
+				</div>
+				<div class="up-wrapper">
+					<a href="#top" class="up anchor">&nbsp;</a>
 				</div>
 			</div>
 		</div>

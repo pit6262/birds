@@ -13,7 +13,7 @@
 
 
 <!-- BEGIN BODY -->
-<div class="main-wrapper">
+<div class="main-wrapper" id="top">
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
@@ -50,8 +50,9 @@
 					</li>
 				</ul>
 			</nav>
-	
-			<div class="header__mobile">
+		</div>
+		<div class="header__mobile">
+			<div class="wrapper">
 				<button class="toggle-menu"></button>
 	
 				<div class="header__buttons">
@@ -60,6 +61,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="header__logo visible-md">
+			<a href="#" class="logo"><img src="img/logo-mobile.png" alt=""></a>
+		</div>
+		<div class="slogan visible-md">зарабатывай деньги, играя в игру</div>
+	
 	</header>
 	<!-- HEADER EOF   -->
 
@@ -136,23 +142,31 @@
 						
 						<div class="bl-repl align-items-center">
 							<div class="bl-repl__left">
-								<div class="bl-repl__img">
-									<img src="img/qiwi_logo.png" alt="">
+								<div class="bl-repl__l">
+									<div class="bl-repl__img">
+										<img src="img/qiwi_logo.png" alt="">
+									</div>
+									
+									<div class="bl-repl__r visible-sm">
+										Выплаты осуществляются через платежные шлюзы. 
+
+									</div>
 								</div>
 								<div class="bl-repl__title">Киви кошелек</div>
 							</div>
 							<div class="bl-repl__right">
 								<div class="bl-repl-dosk">
-									<div class="bl-repl-dosk__item">Выплаты осуществляются через платежные шлюзы. </div> <br>
-									<div class="bl-repl-dosk__item">Срок выплаты составляет от 5 минут до 12 часов.</div> <br>
+									<div class="bl-repl-dosk__item hidden-sm">Выплаты осуществляются через платежные шлюзы. </div> <br class="hidden-sm">
+									<div class="bl-repl-dosk__item">Срок выплаты <span class="hidden-sm">составляет</span> от 5 минут до 12 часов.</div> <br class="hidden-sm">
 									<div class="bl-repl-dosk__item"><span class="font-600 color-green">Комиссия платежного шлюза составляет 5%</span></div>
 								</div>
 								
 							</div>
 						</div>
 
+						
 						<form action="#" class="text-center">
-							<div class="h3">Выберите или Введите номер кошелька</div>
+							<div class="h3"><span class="hidden-sm">Выберите или</span> Введите номер кошелька</div>
 							<div class="form-field">
 								<div class="form-box">
 									<input type="text" class="form-input fi-center">
@@ -166,7 +180,7 @@
 								</div>
 							</div>
 							<div class="form-button">
-								<button type="submit" class="btn btn-form"><span class="btn-mask">пополнить</span></button>
+								<button type="submit" class="btn btn-form"><span class="btn-mask">Вывести</span></button>
 							</div>
 							<div class="form-button "><a href="#" class="btn btn--danger "><span class="btn-mask"><i class="ic ic-btn-left ic-arrow-left"></i>Выбрать другой Способ</span></a></div>
 						
@@ -240,13 +254,26 @@
 						<li><a href="#">О проекте</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
+					
+				</div>
+				<div class="footer-block-nav-btn visible-sm">
+					<ul class="footer-nav-btn">
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Главная</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Новости</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Правила</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">О проекте</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Контакты</span></a></li>
+					</ul>
 				</div>
 				<div class="footer-block-logo">
 					<a href="#" class="footer-logo"><img src="img/footer-logo.png" alt=""></a>
 					<div class="policy"><a href="#" >Пользовательское соглашение</a></div>
 				</div>
-				<div class="footer-block-btn">
+				<div class="footer-block-btn hidden-sm">
 					<a href="#" class="btn"><span class="btn-mask">Войти</span></a>
+				</div>
+				<div class="up-wrapper">
+					<a href="#top" class="up anchor">&nbsp;</a>
 				</div>
 			</div>
 		</div>

@@ -13,7 +13,7 @@
 
 
 <!-- BEGIN BODY -->
-<div class="main-wrapper">
+<div class="main-wrapper" id="top">
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
@@ -50,8 +50,9 @@
 					</li>
 				</ul>
 			</nav>
-	
-			<div class="header__mobile">
+		</div>
+		<div class="header__mobile">
+			<div class="wrapper">
 				<button class="toggle-menu"></button>
 	
 				<div class="header__buttons">
@@ -60,6 +61,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="header__logo visible-md">
+			<a href="#" class="logo"><img src="img/logo-mobile.png" alt=""></a>
+		</div>
+		<div class="slogan visible-md">зарабатывай деньги, играя в игру</div>
+	
 	</header>
 	<!-- HEADER EOF   -->
 
@@ -155,10 +161,12 @@
 								</div>
 							</div>
 						</div>
+						
 
 						<div class="box-blue">
+							<div class="h4 text-center visible-sm">Текущий банк</div>
 							<div class="box-blue__header text-center">
-								<div class="box-blue__title h4">Текущий банк: <span class="color-yellow">280.87 руб.</span></div>
+								<div class="box-blue__title h4"><span class="hidden-sm">Текущий банк: </span><span class="color-yellow">280.87 руб.</span></div>
 							</div>
 						</div>
 						
@@ -167,43 +175,43 @@
 
 						<div class="daily-table">
 							<div class="daily-table__header">
-								<div class="daily-table__th">ID</div>
-								<div class="daily-table__th">ПОЛЬЗОВАТЕЛЬ</div>
+								<div class="daily-table__th hidden-sm">ID</div>
+								<div class="daily-table__th"><span class="hidden-sm">ПОЛЬЗОВАТЕЛЬ</span><span class="visible-sm">НИКНЭЙМ</span></div>
 								<div class="daily-table__th">СУММА</div>
 								<div class="daily-table__th">ДАТА</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
 							</div>
 							<div class="daily-table__body">
-								<div class="daily-table__td">26093363</div>
+								<div class="daily-table__td hidden-sm">26093363</div>
 								<div class="daily-table__td">anis3462</div>
 								<div class="daily-table__td"><span class="color-yellow">79</span></div>
 								<div class="daily-table__td">06.05.2020</div>
@@ -275,13 +283,26 @@
 						<li><a href="#">О проекте</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
+					
+				</div>
+				<div class="footer-block-nav-btn visible-sm">
+					<ul class="footer-nav-btn">
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Главная</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Новости</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Правила</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">О проекте</span></a></li>
+						<li><a href="#" class="btn btn--info"><span class="btn-mask">Контакты</span></a></li>
+					</ul>
 				</div>
 				<div class="footer-block-logo">
 					<a href="#" class="footer-logo"><img src="img/footer-logo.png" alt=""></a>
 					<div class="policy"><a href="#" >Пользовательское соглашение</a></div>
 				</div>
-				<div class="footer-block-btn">
+				<div class="footer-block-btn hidden-sm">
 					<a href="#" class="btn"><span class="btn-mask">Войти</span></a>
+				</div>
+				<div class="up-wrapper">
+					<a href="#top" class="up anchor">&nbsp;</a>
 				</div>
 			</div>
 		</div>
